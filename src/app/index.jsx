@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import {Button, ScrollView, TouchableOpacity} from "react-native";
 import { 
     CadastroContainer, 
     CardEmpresa, 
@@ -27,6 +27,10 @@ import {
     TextoRelatos 
 } from "./styles";
 
+import { useRouter } from "expo-router";
+
+const router = useRouter();
+
 export default function Home() {
     return (
         <ScrollView 
@@ -38,7 +42,9 @@ export default function Home() {
                 {/* Topo */}
                 <Navegacao>
                     <Logo source={require('../assets/images/virteailogo.png')}/>
-                    <Menu source={require('../assets/images/menu.png')}/>
+                    <TouchableOpacity onPress={() => router.push("/login")}>
+                        <Menu source={require('../assets/images/menu.png')}/>
+                    </TouchableOpacity>
                 </Navegacao>
 
                 <HomeImage source={require('../assets/images/Personalizado.png')}/>

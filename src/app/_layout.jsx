@@ -19,7 +19,6 @@ const Center = styled.View`
   align-items: center;
 `;
 
-// caminho correto: src/app/_layout.jsx -> subir 1 nível para src -> entrar em assets
 const fonts = {
     MarmeladRegular: require('../assets/fonts/Marmelad/Marmelad-Regular.ttf'),
     ComfortaaBold: require('../assets/fonts/Comfortaa/static/Comfortaa-Bold.ttf'),
@@ -30,7 +29,6 @@ export default function RootLayout() {
     const [fontsLoaded, setFontsLoaded] = useState(false);
     const preventedRef = useRef(false);
 
-    // chama preventAutoHideAsync uma vez, de forma segura
     useEffect(() => {
         let mounted = true;
         async function prepare() {
@@ -39,7 +37,6 @@ export default function RootLayout() {
                 await SplashScreen.preventAutoHideAsync();
                 preventedRef.current = true;
             } catch (e) {
-                // log detalhado — não deixar quebrar
                 console.warn('preventAutoHideAsync error (safe):', e);
             }
         }
@@ -49,13 +46,11 @@ export default function RootLayout() {
         };
     }, []);
 
-    // Carrega as fontes manualmente com Font.loadAsync
     useEffect(() => {
         let mounted = true;
 
         async function load() {
             try {
-                // log dos requires para checar resolução pelo bundler
                 console.log('Resolving fonts require() results:', {
                     Marmelad: fonts.MarmeladRegular,
                     ComfortaaB: fonts.ComfortaaBold,
@@ -66,7 +61,6 @@ export default function RootLayout() {
                 if (!mounted) return;
                 setFontsLoaded(true);
 
-                // esconder splash depois de carregar fontes
                 try {
                     await SplashScreen.hideAsync();
                 } catch (e) {
@@ -74,7 +68,6 @@ export default function RootLayout() {
                 }
             } catch (e) {
                 console.error('Font.loadAsync error:', e);
-                // fallback: se der erro, tenta esconder a splash para não travar o app
                 try {
                     await SplashScreen.hideAsync();
                 } catch (e2) {
@@ -90,7 +83,6 @@ export default function RootLayout() {
         };
     }, []);
 
-    // Se as fontes não carregaram, mostramos um indicador (a splash nativa deve continuar até hideAsync)
     if (!fontsLoaded) {
         return (
             <SafeAreaProvider>

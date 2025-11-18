@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, CadastroContainer, ContainerCad, ContainerCadastros, ContainerInput, InputCadastro, Logo, Menu, Navegacao, TextButton, TextoCadastro, TextoInput } from "./styles";
+import {TouchableOpacity} from "react-native";
 
 
 export default function Cadastro() {
@@ -7,7 +8,9 @@ export default function Cadastro() {
         <CadastroContainer>
             <Navegacao>
                 <Logo source={require('../../assets/images/virteailogo.png')}/>
-                <Menu source={require('../../assets/images/voltarmobile.png')}/>
+                <TouchableOpacity onPress={() => router.push("/")}>
+                    <Menu source={require('../../assets/images/voltarmobile.png')}/>
+                </TouchableOpacity>
             </Navegacao>
             <ContainerCad>
                 <TextoCadastro>Cadastro</TextoCadastro>

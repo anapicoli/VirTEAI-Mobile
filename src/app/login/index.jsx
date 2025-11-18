@@ -1,5 +1,10 @@
 import React from "react";
 import { Button, ContainerInput, ContainerLog, ContainerLogins,  Contalogin,  InputLogin, LoginContainer, Logo, Menu, Navegacao, TextButton, TextoInput, TextoLogin } from "./styles";
+import {TouchableOpacity} from "react-native";
+
+import { useRouter } from "expo-router";
+
+const router = useRouter();
 
 
 export default function Login() {
@@ -7,7 +12,9 @@ export default function Login() {
         <LoginContainer>
             <Navegacao>
                 <Logo source={require('../../assets/images/virteailogo.png')}/>
-                <Menu source={require('../../assets/images/voltarmobile.png')}/>
+                <TouchableOpacity onPress={() => router.push("/")}>
+                    <Menu source={require('../../assets/images/voltarmobile.png')}/>
+                </TouchableOpacity>
             </Navegacao>
             <ContainerLog>
                 <TextoLogin>Login</TextoLogin>
