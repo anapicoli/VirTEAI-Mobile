@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, Text } from "react-native";
+import { ScrollView } from "react-native";
 import { 
     ImagemNotificacao,
     Logo, 
@@ -21,11 +21,9 @@ export default function Notificacoes () {
         <ScrollView 
         style={{ flex: 1 }} 
         contentContainerStyle={{ flexGrow: 1 }}
-        showsVerticalScrollIndicator={false}
-        >
+        showsVerticalScrollIndicator={false}>
             
             <NotificacoesContainer>
-                
                 <Navegacao>
                     <Logo source={require('../../assets/images/virteailogo.png')}/>
                     <Menu source={require('../../assets/images/menu.png')}/>
