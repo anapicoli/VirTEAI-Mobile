@@ -1,11 +1,10 @@
 import styled from "styled-components/native";
 
-export const LoginContainer = styled.View`
+export const CadastroContainer = styled.View`
     display: flex;
     background-color:rgb(252, 252, 252);
     align-items: center;
     flex: 1;
-
 `
 export const Navegacao = styled.View`
     background-color: #CADAED;
@@ -18,71 +17,75 @@ export const Logo = styled.Image`
 `
 export const Menu = styled.Image`
     width: 48px;
-    height: 30px;
+    height: 27px;
     margin-left: 83%;
     margin-top: -48px;
 `
 ///////
-export const ContainerLog = styled.View`
+export const ContainerCad = styled.View`
     background-color: #9CB4D3;
     width: 165px;
-    height: 47px;
-    margin-top: 208px;
+    height: 50px;
+    margin-top: 108px;
     border-radius: 20px;
-    elevation: 20;
+    elevation: 20px;
 
 `
-export const TextoLogin = styled.Text`
+export const TextoCadastro = styled.Text`
     font-size: 30px;
     color: #000000ff;
     text-align: center;
+    font-family: "MarmeladRegular";
+
 `
-export const ContainerLogins = styled.View`
+export const ContainerCadastros = styled.View`
     background-color: #9CB4D3;
-    width: 291px;
-    height: 328px;
+    width: 311px;
+    height: 397px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-top: -13px;
+    margin-top: -23px;
 `
 export const ContainerInput = styled.View`
 
 `
 export const TextoInput = styled.Text`
     font-size: 15px;
-    margin-top: 30px;
+    margin-top: 25px;
     color: #000000ff;
     background-color: #9CB4D3;
     border-radius: 20px;
     margin-left: 13px;
     margin-bottom: 5px;
+    font-family: "ComfortaaRegular";
+
 `
-export const InputLogin = styled.TextInput`
+export const InputCadastro = styled.TextInput`
     color: #A796A6;
     background-color: white;
     font-size: 15px;
     width: 235px;
     height: 40px;
     border-radius: 20px;
-    padding-left: 15px;
-    elevation: 5;
+    padding-left: 12px;
+    elevation: 5px;
+        font-family: "ComfortaaRegular";
+
 `
 export const Button = styled.TouchableOpacity`
    background-color: #22304A;
    border-radius: 15px;
    width: 91px;
    height: 30px;
-   margin-top: 25px;
+   margin-top: 30px;
    display: flex;
     justify-content: center;
 `
 export const TextButton = styled.Text`
     color: #ffffff;
     text-align: center;
-`
-export const Contalogin = styled.Text`
-    margin-top: 15px;
-    text-size: 15px;
+        font-family: "MarmeladRegular";
+
 `

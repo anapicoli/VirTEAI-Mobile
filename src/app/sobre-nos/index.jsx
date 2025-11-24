@@ -95,13 +95,13 @@ export default function SobreNos() {
                             <ContainerPerfil>
                                 <PerfilCreators source={require('../../assets/images/ana.png')}/>
                                 <PerfilTexto>
-                                    Desenvolvedora de código e escrita
+                                    Designer
                                 </PerfilTexto>
                             </ContainerPerfil>
                             <ContainerPerfil>
                                 <PerfilCreators source={require('../../assets/images/ester.png')}/>
                                 <PerfilTexto>
-                                    Desenvolvedora de código e escrita
+                                    Desenvolvedora de banco de dados
                                 </PerfilTexto>
                             </ContainerPerfil>
                         </ContainerMulheres>
@@ -110,13 +110,13 @@ export default function SobreNos() {
                             <ContainerPerfil>
                                 <PerfilCreators source={require('../../assets/images/valdir.png')}/>
                                 <PerfilTexto>
-                                    Desenvolvedora de código e escrita
+                                    Marketing
                                 </PerfilTexto>
                             </ContainerPerfil>
                             <ContainerPerfil>
                                 <PerfilCreators source={require('../../assets/images/yuri.png')}/>
                                 <PerfilTexto>
-                                    Desenvolvedora de código e escrita
+                                    Desenvolvedor de inteligencia artificial
                                 </PerfilTexto>
                             </ContainerPerfil>
                         </ContainerHomens>

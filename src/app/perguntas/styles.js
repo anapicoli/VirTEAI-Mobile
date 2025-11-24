@@ -42,8 +42,8 @@ export const SubPerguntas = styled.Text`
 export const CardAreia = styled.View`
     background-color: #F9F6ED;
     border: 3px #C9BBA0;
-    width: 325px;
-    height: 150px;
+    width: 355px;
+    height: 140px;
     border-radius: 15px;
     display: flex;
     margin-bottom: 10px;
@@ -54,8 +54,8 @@ export const CardAreia = styled.View`
 export const CardCiano = styled.View`
     background-color: #E8FDFF;
     border: 3px #60B0B8;
-    width: 325px;
-    height: 150px;
+    width: 355px;
+    height: 140px;
     border-radius: 15px;
     display: flex;
     margin-bottom: 10px;
@@ -65,8 +65,8 @@ export const CardCiano = styled.View`
 export const CardAzul = styled.View`
     background-color: #CADAED;
     border: 3px #22304A;
-    width: 325px;
-    height: 150px;
+    width: 355px;
+    height: 140px;
     border-radius: 15px;
     display: flex;
     margin-bottom: 10px;
@@ -76,8 +76,8 @@ export const CardAzul = styled.View`
 export const CardVerde = styled.View`
     background-color: #DDF8E5;
     border: 3px #509266;
-    width: 325px;
-    height: 150px;
+    width: 355px;
+    height: 140px;
     border-radius: 15px;
     display: flex;
     margin-bottom: 10px;
@@ -85,21 +85,21 @@ export const CardVerde = styled.View`
     padding: 15px;
 `
 export const QuestionImg = styled.Image`
-    margin-right: 10px;
+    margin-right: 12px;
 `
 export const CardTextos = styled.View`
 `
 export const TituloCards = styled.Text`
     font-size: 16px;
     color: #000000ff;
-
-    width: 259px;
+    width: 280px;
     font-family: "ComfortaaBold";
+    margin-top: -7px;
 `
 export const SubCards = styled.Text`
     font-size: 12px;
     color: #000000ff;
-    width: 250px;
+    width: 280px;
     font-family: "ComfortaaRegular";
    
 `
@@ -108,5 +108,5 @@ export const SubCardAreia = styled.Text`
     color: #000000ff;
     width: 250px;
     font-family: "ComfortaaRegular";
-   margin-top: -15;
+   
 `

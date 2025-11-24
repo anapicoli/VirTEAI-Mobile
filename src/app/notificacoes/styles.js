@@ -22,12 +22,13 @@ export const Menu = styled.Image`
     margin-left: 83%;
     margin-top: -48px;
 `;
-
+/////////
 export const TituloNotificacoes = styled.Text`
-    font-size: 30px;
-    color: #415A77;
+    font-size: 26px;
     margin: 30px;
-`;
+    font-family: "MarmeladRegular";
+
+`
 
 export const NotificacoesHeader = styled.View`
     flex-direction: row;
@@ -35,7 +36,11 @@ export const NotificacoesHeader = styled.View`
     justify-content: space-between;
 `;
 
-export const Voltar = styled.Image``;
+export const Voltar = styled.Image`
+    margin-right: 25px;
+    width: 50px;
+    height: 30px;
+`;
 
 export const NotificacoesView = styled.View`
     width: 100%;
@@ -63,15 +68,17 @@ export const ImagemNotificacao = styled.Image`
 `;
 
 export const TextoMaior = styled.Text`
-    font-size: 25px;
+    font-size: 20px;
     color: #295766;
     margin-left: 25px;
     width: 281px;
+    font-family: "ComfortaaBold";
 `;
 
 export const TextoMenor = styled.Text`
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
     margin-left: 25px;
     width: 281px;
+    font-family: "ComfortaaRegular";
 `;

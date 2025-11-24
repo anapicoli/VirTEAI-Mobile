@@ -27,6 +27,8 @@ export const TituloSocialMidia = styled.Text`
     text-align: center;
     margin-bottom: 5px;
     margin-top: 30px;
+        font-family: "MarmeladRegular";
+
 `
 export const SubSocialMidia = styled.Text`
     font-size: 15px;
@@ -34,6 +36,8 @@ export const SubSocialMidia = styled.Text`
     text-align: center;
     margin-bottom: 45px;
     margin-top: 5px;
+    font-family: "ComfortaaBold";
+
 `
 export const CardSocialMidia = styled.View`
     background-color: #22304A;
@@ -56,4 +60,5 @@ export const TextoSocialMidia = styled.Text`
     color: #ffffffff;
     text-align: center;
     margin-top: 5px;
+    font-family: "ComfortaaBold";
 `

@@ -1,25 +1,25 @@
-// src/app/_layout.jsx
 import React, { useEffect, useRef, useState } from 'react';
 import { ActivityIndicator } from 'react-native';
-import { Slot } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import styled from 'styled-components/native';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { Drawer } from 'expo-router/drawer';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const Container = styled.SafeAreaView`
-  flex: 1;
-  background-color: #ffffff;
+    flex: 1;
+    background-color: #ffffff;
 `;
 
 const Center = styled.View`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 `;
 
-// caminho correto: src/app/_layout.jsx -> subir 1 nível para src -> entrar em assets
+// caminhos relativos ao arquivo src/app/_layout.jsx
 const fonts = {
     MarmeladRegular: require('../assets/fonts/Marmelad/Marmelad-Regular.ttf'),
     ComfortaaBold: require('../assets/fonts/Comfortaa/static/Comfortaa-Bold.ttf'),
@@ -39,7 +39,6 @@ export default function RootLayout() {
                 await SplashScreen.preventAutoHideAsync();
                 preventedRef.current = true;
             } catch (e) {
-                // log detalhado — não deixar quebrar
                 console.warn('preventAutoHideAsync error (safe):', e);
             }
         }
@@ -55,7 +54,6 @@ export default function RootLayout() {
 
         async function load() {
             try {
-                // log dos requires para checar resolução pelo bundler
                 console.log('Resolving fonts require() results:', {
                     Marmelad: fonts.MarmeladRegular,
                     ComfortaaB: fonts.ComfortaaBold,
@@ -74,7 +72,7 @@ export default function RootLayout() {
                 }
             } catch (e) {
                 console.error('Font.loadAsync error:', e);
-                // fallback: se der erro, tenta esconder a splash para não travar o app
+                // fallback: tenta esconder a splash para não travar o app
                 try {
                     await SplashScreen.hideAsync();
                 } catch (e2) {
@@ -90,7 +88,7 @@ export default function RootLayout() {
         };
     }, []);
 
-    // Se as fontes não carregaram, mostramos um indicador (a splash nativa deve continuar até hideAsync)
+    // Enquanto as fontes não carregaram, mostramos um indicador.
     if (!fontsLoaded) {
         return (
             <SafeAreaProvider>
@@ -101,12 +99,26 @@ export default function RootLayout() {
         );
     }
 
+    // Quando as fontes estiverem prontas, renderiza o Drawer.
+    // O Drawer mapeia automaticamente as rotas presentes em src/app.
+    // Se quiser sobrescrever labels/titles, adicione <Drawer.Screen name="..." options={{ drawerLabel, title }} />
     return (
-        <SafeAreaProvider>
-            <Container>
-                <StatusBar hidden={true} />
-                <Slot />
-            </Container>
-        </SafeAreaProvider>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+            <SafeAreaProvider>
+                <Container>
+                    <StatusBar hidden={true} />
+                    <Drawer>
+                        {/* Exemplo de telas explícitas — comente/ajuste conforme sua estrutura de rotas */}
+                        <Drawer.Screen
+                            name="index"
+                            options={{
+                                drawerLabel: 'Home',
+                                title: 'Overview',
+                            }}
+                        />
+                    </Drawer>
+                </Container>
+            </SafeAreaProvider>
+        </GestureHandlerRootView>
     );
 }

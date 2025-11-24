@@ -102,7 +102,7 @@ export default function Ofertas() {
                     <CardContainerMarrom>
                         <Titulopersonalizado>Plano Personalizado</Titulopersonalizado>
                     </CardContainerMarrom>
-                    <Descricao>Óculos VR adaptado por assinatura</Descricao>
+                    <Descricao>Óculos VR próprio e personalizado</Descricao>
                     <CardBeneficiosMarrom>
                         <ContainerBeneficiosPersonalizados>
                         <Check source={require('../../assets/images/check.png')}/>

@@ -9,23 +9,15 @@ import {
     ContainerEmpresa, 
     DescricaoEmpresas, 
     EmpresaImage, 
-    EmpresasParceiras, 
-    Footer, 
-    FooterColumn, 
-    FooterContact, 
-    Footerimg, 
+    EmpresasParceiras,
     HomeImage, 
-    ImageRelatos, 
-    Logo, 
-    LogoFooter, 
-    Menu, 
-    Navegacao, 
-    RelatosHome, 
-    SectionEmpresas, 
-    TextFooter, 
+    ImageRelatos,
+    RelatosHome,
+    SectionEmpresas,
     TextoClientes, 
     TextoRelatos 
 } from "./styles";
+import Header from "../components/Header";
 
 export default function Home() {
     return (
@@ -36,10 +28,8 @@ export default function Home() {
         >
             <CadastroContainer>
                 {/* Topo */}
-                <Navegacao>
-                    <Logo source={require('../assets/images/virteailogo.png')}/>
-                    <Menu source={require('../assets/images/menu.png')}/>
-                </Navegacao>
+
+                <Header/>
 
                 <HomeImage source={require('../assets/images/Personalizado.png')}/>
 

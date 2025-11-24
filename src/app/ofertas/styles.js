@@ -28,17 +28,21 @@ export const HomeImage = styled.Image`
 `
 ////////
 export const TituloOfertas = styled.Text`
-    font-size: 30px;
+    font-size: 28px;
     color: #000000ff;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 60px;
+    font-family: "MarmeladRegular";
+
 `
 export const Paragrafo = styled.Text`
-    font-size: 22px;
+    font-size: 18px;
     color: #000000ff;
-    width: 397px;
+    width: 400px;
     text-align: center;
+    font-family: "ComfortaaRegular";
+
 `
 ////////card azul
 export const CardMensal = styled.View`
@@ -73,13 +77,16 @@ export const TituloMensal = styled.Text`
     font-size: 25px;
     color: #ffffffff;
     text-align: center;
+    font-family: "MarmeladRegular";
 
 `
 export const Descricao = styled.Text`
     font-size: 20px;
     color: #415A77;
     text-align: center;
-    width: 245px;
+    width: 215px;
+    font-family: "MarmeladRegular";
+
 `
 export const ContainerBeneficios = styled.View`
     display: flex;
@@ -106,13 +113,15 @@ export const Preco = styled.Text`
     text-align: center;
     width: 245px;
     margin-top: 10px;
+    font-family: "MarmeladRegular";
+
 `
 export const ButtonMensal = styled.TouchableOpacity`
     width: 141px;
     height: 40px;
     background-color: #7EC9D1;
     display: flex;
-    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -122,10 +131,11 @@ export const TextoButton = styled.Text`
     align-items: center;
 `
 export const TextButton = styled.Text`
-    font-size: 20px;
+    font-size: 18px;
     color:rgb(255, 255, 255);
     text-align: center;
-    
+    font-family: "ComfortaaRegular";
+
 `
 ////////card marrom
 export const CardPersonalizado = styled.View`
@@ -159,6 +169,7 @@ export const Titulopersonalizado = styled.Text`
     font-size: 25px;
     color: #ffffffff;
     text-align: center;
+    font-family: "MarmeladRegular";
 
 `
 export const DescricaoPersonalizado = styled.Text`
@@ -166,6 +177,8 @@ export const DescricaoPersonalizado = styled.Text`
     color: #415A77;
     text-align: center;
     width: 145px;
+    font-family: "MarmeladRegular";
+
 `
 export const ContainerBeneficiosPersonalizados = styled.View`
     display: flex;
@@ -183,19 +196,23 @@ export const BeneficiosPersonalizado = styled.Text`
     color: #22304A;
     text-align: center;
     margin-left: 6px;
+    font-family: "ComfortaaRegular";
+
 `
 export const Precos = styled.Text`
     font-size: 25px;
     color: #415A77;
     text-align: center;
     margin-top: 10px;
+    font-family: "MarmeladRegular";
+
 `
 export const ButtonPersonalizados = styled.TouchableOpacity`
     width: 141px;
     height: 40px;
     background-color: #AE9C7C;
     display: flex;
-    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     margin-top: 20px;
     margin-bottom: 25px;
@@ -204,7 +221,8 @@ export const TextoButtonMarrom = styled.Text`
     font-size: 25px;
     color: #ffffffff;
     text-align: center;
-    
+    font-family: "ComfortaaRegular";
+
 `
 export const ContainerPreco = styled.View`
   display: flex;
@@ -217,6 +235,7 @@ export const ContainerPreco = styled.View`
 export const Apartir = styled.Text`
   font-size: 15px;
   color: #415A77;
-  
+      font-family: "ComfortaaRegular";
+
 `;
 

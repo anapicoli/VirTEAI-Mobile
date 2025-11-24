@@ -2,7 +2,7 @@ import React from "react";
 import { Button, CadastroContainer, ContainerCad, ContainerCadastros, ContainerInput, InputCadastro, Logo, Menu, Navegacao, TextButton, TextoCadastro, TextoInput } from "./styles";
 
 
-export default function Cadastro() {
+export default function CadastroTerapeuta() {
     return (
         <CadastroContainer>
             <Navegacao>
@@ -17,10 +17,7 @@ export default function Cadastro() {
                     <TextoInput>Nome:</TextoInput>
                     <InputCadastro>Insira seu nome completo</InputCadastro>
                 </ContainerInput>
-                <ContainerInput>
-                    <TextoInput>Data de Nascimento:</TextoInput>
-                    <InputCadastro>dd/mm/aaaa</InputCadastro>
-                </ContainerInput>
+                
                 <ContainerInput>
                     <TextoInput>Email:</TextoInput>
                     <InputCadastro>Insira seu email</InputCadastro>
@@ -28,6 +25,10 @@ export default function Cadastro() {
                 <ContainerInput>
                     <TextoInput>Senha:</TextoInput>
                     <InputCadastro>defina a sua senha</InputCadastro>
+                </ContainerInput>
+                <ContainerInput>
+                    <TextoInput>Registro Profissional:</TextoInput>
+                    <InputCadastro>Informe o seu registro profissional</InputCadastro>
                 </ContainerInput>
                 <Button>
                     <TextButton>Enviar</TextButton>

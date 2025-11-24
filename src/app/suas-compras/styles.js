@@ -30,10 +30,11 @@ export const HomeImage = styled.Image`
 
 export const TituloCompras = styled.Text`
     font-size: 20px;
-    color: #415A77;
+    color: #000000ff;
     text-align: center;
-    width: 256px;
+    width: 286px;
     margin-bottom: 40px;
+    font-family: "MarmeladRegular";
 
 `
 
@@ -50,6 +51,8 @@ export const Button = styled.TouchableOpacity`
 export const TextoButton = styled.Text`
     font-size: 15px;
     color: #ffffffff;
+        font-family: "MarmeladRegular";
+
 `
 ////////////////
 export const Footer = styled.View`

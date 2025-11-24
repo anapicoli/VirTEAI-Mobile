@@ -31,7 +31,10 @@ export default function Notificacoes () {
                     <Menu source={require('../../assets/images/menu.png')}/>
                 </Navegacao>
 
-                <TituloNotificacoes>Notificações</TituloNotificacoes>
+                <NotificacoesHeader>
+                    <TituloNotificacoes>Notificações</TituloNotificacoes>
+                    <Voltar source={require('../../assets/images/voltarmobile.png')}/>
+                </NotificacoesHeader>
 
 
                 <NotificacoesView>

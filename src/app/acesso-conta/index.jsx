@@ -3,21 +3,16 @@ import {
     AcessoConta,
     AcessoText,
     AcessoView,
-    Button,
     ContainerAcesso,
     ContainerContinuar,
     ContinuarText,
-    HomeImage,
     Logo, 
     Menu, 
     Navegacao, 
-    OfertasContainer, 
     Perfil, 
     TelaFundo, 
     Termos, 
     Textinho, 
-    TextoButton,
-    TituloCompras,
 } from "./styles";
 
 export default function SuaConta () {
@@ -31,7 +26,7 @@ export default function SuaConta () {
                        
                 <TelaFundo source={require('../../assets/images/technologybackground.png')}>
                 <AcessoView>
-                    <AcessoText>Acesse sua conta </AcessoText>
+                    <AcessoText>Acesse Sua Conta!</AcessoText>
                 </AcessoView>
                 <ContainerAcesso>
                 <Perfil source={require('../../assets/images/perfilicon.png')}/>

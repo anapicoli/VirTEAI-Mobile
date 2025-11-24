@@ -6,21 +6,6 @@ export const CadastroContainer = styled.View`
     align-items: center;
     flex: 1;
 `
-export const Navegacao = styled.View`
-    background-color: #CADAED;
-    width: 100%;
-    height: 90px;
-    display: flex;
-`
-export const Logo = styled.Image`
-    margin: 9px;
-`
-export const Menu = styled.Image`
-    width: 38px;
-    height: 30px;
-    margin-left: 83%;
-    margin-top: -60px;
-`
 ///////
 export const HomeImage = styled.Image`
     width: 100%;
@@ -32,19 +17,23 @@ export const RelatosHome = styled.Text`
     text-align: center;
     margin-bottom: 30px;
     margin-top: 90px;
+    font-family: "MarmeladRegular";
+
 `
 export const TextoRelatos = styled.Text`
     font-size: 24px;
     color: #000000ff;
     text-align: center;
     width: 400px;
+    font-family: "ComfortaaRegular";
+
 `
 export const ContainerRelatos = styled.View`
     margin-top: 120px;
     display: flex;
     flex-direction: row;
     gap: 21px;
-    
+
 `
 
 export const CardRelatoCliente = styled.View`
@@ -59,32 +48,36 @@ export const CardRelatoCliente = styled.View`
 
 `
 export const ImageRelatos = styled.Image`
-   width: 240px;
+    width: 240px;
     height: 120px;
 `
 export const CardTextosRelatos = styled.View`
     background-color: #ffffffff;
-     width: 240px;
+    width: 240px;
     height: 190px;
     border-radius: 15px;
     margin-top: 20px;
     display: flex;
     align-items: center;
-    
+
 `
 export const TextoClientes = styled.Text`
-   font-size: 12px;
+    font-size: 11px;
     margin: 10px;
     color: #000000ff;
     width: 190px;
     text-align: center;
+    font-family: "MarmeladRegular";
+
 `
 export const CardTextoClientes = styled.Text`
-   font-size: 10px;
-    margin: 10px;
+    font-size: 10px;
+    margin: 1px;
     color: #000000ff;
     width: 204px;
     text-align: justify;
+    font-family: "ComfortaaRegular";
+
 `
 //////////////////
 export const SectionEmpresas = styled.View`
@@ -98,6 +91,8 @@ export const EmpresasParceiras = styled.Text`
     font-size: 30px;
     text-align: center;
     margin-top: 30px;
+    font-family: "MarmeladRegular";
+
 `
 export const ContainerEmpresa = styled.View`
     display: flex;
@@ -105,18 +100,20 @@ export const ContainerEmpresa = styled.View`
     justify-content: center;
     gap: 12px;
     margin-top: 25px;
-    
+
 `
 export const CardEmpresa = styled.View`
-align-items: center;
+    align-items: center;
 `
 export const EmpresaImage = styled.Image`
 
-   
+
 `
 export const DescricaoEmpresas = styled.Text`
-    font-size: 10px;
+    font-size: 9px;
     margin-top: 5px;
     width: 90px;
     text-align: center;
+    font-family: "ComfortaaRegular";
+
 `

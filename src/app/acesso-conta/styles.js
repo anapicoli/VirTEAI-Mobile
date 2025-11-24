@@ -31,11 +31,11 @@ export const Menu = styled.Image`
 
 export const AcessoView = styled.View`
     background-color: #9CB4D3;
-    width: 293px;
+    width: 330px;
     height: 47px;
     margin-top: 202px;
     border-radius: 20px;
-    elevation: 20;
+    elevation: 6px;
      font-family: "MarmeladRegular";
 
 `
@@ -48,8 +48,8 @@ export const AcessoText = styled.Text`
 `
 export const ContainerAcesso = styled.View`
     background-color: #9CB4D3;
-    width: 291px;
-    height: 295px;
+    width: 330px;
+    height: 315px;
     margin-top: -25px;
     border-radius: 20px;
     display: flex;
@@ -57,6 +57,8 @@ export const ContainerAcesso = styled.View`
 `
 export const Perfil = styled.Image`
    margin-top: 58px;
+   width: 80px;
+   height: 80px;
 `
 export const ContainerContinuar = styled.TouchableOpacity`
     background-color: #22304A;
@@ -70,7 +72,8 @@ export const ContinuarText = styled.Text`
     color: #ffffffff;
     text-align: center;
     margin-top: 6px;
-    font-family: "ComfortaaRegular";
+    font-family: "MarmeladRegular";
+
 
 `
 export const Textinho = styled.Text`

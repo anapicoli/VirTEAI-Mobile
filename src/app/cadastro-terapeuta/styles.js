@@ -25,7 +25,7 @@ export const Menu = styled.Image`
 export const ContainerCad = styled.View`
     background-color: #9CB4D3;
     width: 165px;
-    height: 47px;
+    height: 50px;
     margin-top: 108px;
     border-radius: 20px;
     elevation: 20px;
@@ -35,38 +35,44 @@ export const TextoCadastro = styled.Text`
     font-size: 30px;
     color: #000000ff;
     text-align: center;
+    font-family: "MarmeladRegular";
+
 `
 export const ContainerCadastros = styled.View`
     background-color: #9CB4D3;
-    width: 291px;
-    height: 487px;
+    width: 311px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-top: -13px;
+    margin-top: -23px;
 `
 export const ContainerInput = styled.View`
 
 `
 export const TextoInput = styled.Text`
     font-size: 15px;
-    margin-top: 30px;
+    margin-top: 25px;
     color: #000000ff;
     background-color: #9CB4D3;
     border-radius: 20px;
     margin-left: 13px;
     margin-bottom: 5px;
+    font-family: "ComfortaaRegular";
+
 `
 export const InputCadastro = styled.TextInput`
     color: #A796A6;
     background-color: white;
-    font-size: 15px;
+    font-size: 12px;
     width: 235px;
     height: 40px;
     border-radius: 20px;
     padding-left: 15px;
     elevation: 5;
+        font-family: "ComfortaaRegular";
+
 `
 export const Button = styled.TouchableOpacity`
    background-color: #22304A;
@@ -80,4 +86,6 @@ export const Button = styled.TouchableOpacity`
 export const TextButton = styled.Text`
     color: #ffffff;
     text-align: center;
+        font-family: "MarmeladRegular";
+
 `
