@@ -1,41 +1,31 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import { 
-    Button,
-    HomeImage,
-    Logo, 
-    Menu, 
-    Navegacao, 
-    OfertasContainer, 
-    TextoButton,
-    TituloCompras,
+import {
+  Button,
+  HomeImage,
+  OfertasContainer,
+  TextoButton,
+  TituloCompras,
 } from "../../../styles/suascompras";
+import Header from "../../../components/header/Header";
 
 export default function SuasCompras () {
-    return (
-        <ScrollView 
-            style={{ flex: 1 }} 
-            contentContainerStyle={{ flexGrow: 1 }}
-            showsVerticalScrollIndicator={false}
-        >
-            <OfertasContainer>
-                {/* Topo */}
-                <Navegacao>
-                    <Logo source={require('../../../assets/images/virteailogo.png')}/>
-                    <Menu source={require('../../../assets/images/menu.png')}/>
-                </Navegacao>
-
-                <HomeImage source={require('../../../assets/images/bagsicon.png')}/>
-
-                <TituloCompras>Nenhuma Compra Pendente no Momento</TituloCompras>
-                <Button>
-                    <TextoButton>
-                        Comprar Agora
-                    </TextoButton>
-                </Button>
-
-               
-            </OfertasContainer>
-        </ScrollView>
-    );
+  return (
+    <ScrollView
+      style={{ flex: 1 }}
+      contentContainerStyle={{ flexGrow: 1 }}
+      showsVerticalScrollIndicator={false}
+    >
+      <OfertasContainer>
+        <Header/>
+        <HomeImage source={require('../../../assets/images/bagsicon.png')}/>
+        <TituloCompras>Nenhuma Compra Pendente no Momento</TituloCompras>
+        <Button>
+          <TextoButton>
+            Comprar Agora
+          </TextoButton>
+        </Button>
+      </OfertasContainer>
+    </ScrollView>
+  );
 }

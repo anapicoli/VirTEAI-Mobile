@@ -1,16 +1,13 @@
 import React from "react";
 import {
-    Barra,
-    Card,
+  Barra,
+  Card,
   ContainerPerfil,
   Ficha,
   Icons,
   ImagemPerfil,
   Info,
   InfoCadastro,
-  Logo,
-  Menu,
-  Navegacao,
   PerfilPaciente,
   StatusPerfil,
   TextoInfo,
@@ -18,6 +15,7 @@ import {
 } from "../../../styles/perfilpaciente";
 import styled from "styled-components";
 import { BlurView } from 'expo-blur';
+import Header from "../../../components/header/Header";
 
 export default function Paciente() {
   const Content = styled(BlurView).attrs({
@@ -36,11 +34,7 @@ export default function Paciente() {
 
   return (
     <PerfilPaciente>
-      <Navegacao>
-        <Logo source={require("../../../assets/images/virteailogo.png")} />
-        <Menu source={require("../../../assets/images/voltarmobile.png")} />
-      </Navegacao>
-
+      <Header/>
       <ContainerPerfil>
         <ImagemPerfil source={require("../../../assets/images/perfilicon.png")} />
 
@@ -71,7 +65,6 @@ export default function Paciente() {
            <Card>
             <Icons source={require("../../../assets/images/visualizeicon.png")} />
                 <Icons source={require("../../../assets/images/editicon.png")} />
-
            </Card>
         </Content>
       </InfoCadastro>

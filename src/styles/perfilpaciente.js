@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const PerfilPaciente = styled.View`
     display: flex;
-    background-color:rgb(252, 252, 252);
+    background-color: white;
     align-items: center;
     flex: 1;
 `
@@ -21,7 +21,7 @@ export const Menu = styled.Image`
     margin-left: 83%;
     margin-top: -48px;
 `
-///////
+
 export const ContainerPerfil = styled.View`
     display: flex;
     flex-direction: row;
@@ -49,7 +49,7 @@ export const StatusPerfil = styled.Text`
     border-radius: 30px;
     margin-top: 15px;
 `
-//////////
+
 
 export const InfoCadastro = styled.View`
     display: flex;
@@ -61,7 +61,7 @@ export const InfoCadastro = styled.View`
 `
 export const TextoInfo = styled.Text`
     font-size: 18px;
-    color: #000000ff;
+    color: black;
     font-family: "MarmeladRegular";
     margin-right: 110px;
     margin-bottom: 20px;

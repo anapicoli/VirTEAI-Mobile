@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const OfertasContainer = styled.View`
     display: flex;
-    background-color:rgb(252, 252, 252);
+    background-color: white;
     align-items: center;
     flex: 1;
 `
@@ -21,12 +21,12 @@ export const Menu = styled.Image`
     margin-left: 83%;
     margin-top: -48px;
 `
-///////
+
 export const HomeImage = styled.Image`
     width: 100%;
     height: 180px;
 `
-////////
+
 export const TituloOfertas = styled.Text`
     font-size: 28px;
     color: #000000ff;
@@ -132,12 +132,11 @@ export const TextoButton = styled.Text`
 `
 export const TextButton = styled.Text`
     font-size: 18px;
-    color:rgb(255, 255, 255);
+    color: white;
     text-align: center;
     font-family: "ComfortaaRegular";
 
 `
-////////card marrom
 export const CardPersonalizado = styled.View`
     width: 275px;
     height: 487px;
@@ -167,7 +166,7 @@ export const CardBeneficiosMarrom = styled.View`
 `
 export const Titulopersonalizado = styled.Text`
     font-size: 25px;
-    color: #ffffffff;
+    color: white;
     text-align: center;
     font-family: "MarmeladRegular";
 
@@ -219,7 +218,7 @@ export const ButtonPersonalizados = styled.TouchableOpacity`
 `
 export const TextoButtonMarrom = styled.Text`
     font-size: 25px;
-    color: #ffffffff;
+    color: white;
     text-align: center;
     font-family: "ComfortaaRegular";
 

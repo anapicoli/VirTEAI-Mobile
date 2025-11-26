@@ -2,26 +2,11 @@ import styled from "styled-components/native";
 
 export const OfertasContainer = styled.View`
     display: flex;
-    background-color:rgb(252, 252, 252);
+    background-color: white;
     align-items: center;
     flex: 1;
 `
-export const Navegacao = styled.View`
-    background-color: #CADAED;
-    width: 100%;
-    height: 90px;
-    display: flex;
-`
-export const Logo = styled.Image`
-    margin: 9px;
-`
-export const Menu = styled.Image`
-    width: 38px;
-    height: 30px;
-    margin-left: 83%;
-    margin-top: -48px;
-`
-///////
+
 export const HomeImage = styled.Image`
    margin-top: 60%;
    margin-bottom: 40px;
@@ -50,36 +35,7 @@ export const Button = styled.TouchableOpacity`
 `
 export const TextoButton = styled.Text`
     font-size: 15px;
-    color: #ffffffff;
+    color: white;
         font-family: "MarmeladRegular";
-
-`
-////////////////
-export const Footer = styled.View`
-    width: 100%;
-    height: 100px;
-    background-color: #CADAED;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-`
-export const FooterColumn = styled.View`
-    margin-top: 10px
-`
-export const LogoFooter = styled.Image`
-   margin-top: 10px;
-   margin-bottom: 10px;
-`
-export const TextFooter = styled.Text`
-font-size: 5px;
-margin-bottom: 5px;
-   margin-left: 1px
-`
-export const FooterContact = styled.View`
-    display: flex;
-    flex-direction: row;
-`
-export const Footerimg = styled.Image`
 
 `

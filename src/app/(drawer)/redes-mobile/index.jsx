@@ -2,24 +2,19 @@ import React from "react";
 import { 
     CardSocialMidia,
     ContainerSocialMidia,
-    Logo,
     LogoRedes,
-    Menu,
-    Navegacao,
     RedesMobile,
     SubSocialMidia,
     TextoSocialMidia,
     TituloSocialMidia, 
 
 } from "../../../styles/redesmobile";
+import Header from "../../../components/header/Header";
 
 export default function RedesSociais() {
     return (
         <RedesMobile>
-            <Navegacao>
-                <Logo source={require('../../../assets/images/virteailogo.png')}/>
-                <Menu source={require('../../../assets/images/voltarmobile.png')}/>
-            </Navegacao>
+          <Header/>
             <TituloSocialMidia>Nossas redes sociais</TituloSocialMidia>
             <SubSocialMidia>Acompanhe nossos projetos e novidades!</SubSocialMidia>
             <ContainerSocialMidia>

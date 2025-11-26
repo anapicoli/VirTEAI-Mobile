@@ -5,24 +5,7 @@ export const NotificacoesContainer = styled.View`
     background-color:rgb(252, 252, 252);
 `;
 
-export const Navegacao = styled.View`
-    background-color: #CADAED;
-    width: 100%;
-    height: 90px;
-    display: flex;
-`;
 
-export const Logo = styled.Image`
-    margin: 9px;
-`;
-
-export const Menu = styled.Image`
-    width: 38px;
-    height: 30px;
-    margin-left: 83%;
-    margin-top: -48px;
-`;
-/////////
 export const TituloNotificacoes = styled.Text`
     font-size: 26px;
     margin: 30px;
@@ -34,12 +17,6 @@ export const NotificacoesHeader = styled.View`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-`;
-
-export const Voltar = styled.Image`
-    margin-right: 25px;
-    width: 50px;
-    height: 30px;
 `;
 
 export const NotificacoesView = styled.View`

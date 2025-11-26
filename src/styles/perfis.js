@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const PerfisContainer = styled.View`
     display: flex;
-    background-color:rgb(252, 252, 252);
+    background-color: white;
     align-items: center;
     flex: 1;
 `
@@ -24,7 +24,7 @@ export const Menu = styled.Image`
 ///////
 export const TextoPerfil = styled.Text`
     font-size: 30px;
-    color: #000000ff;
+    color: black;
     text-align: center;
     margin-top: 25px;
     font-family: "MarmeladRegular";

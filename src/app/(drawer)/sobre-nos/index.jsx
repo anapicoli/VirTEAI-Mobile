@@ -11,9 +11,6 @@ import {
     ContatoTitulo,
     HomeImage,
     InfoSac,
-    Logo, 
-    Menu, 
-    Navegacao, 
     ParagrafoMissao, 
     Paragrafos, 
     ParagrafoTime, 
@@ -25,6 +22,7 @@ import {
     TextosSac,
     TituloSobrenos, 
 } from "../../../styles/sobrenos";
+import Header from "../../../components/header/Header";
 
 export default function SobreNos() {
     return (
@@ -34,12 +32,7 @@ export default function SobreNos() {
             showsVerticalScrollIndicator={false}
         >
             <SobreNosContainer>
-                {/* Topo */}
-                <Navegacao>
-                    <Logo source={require('../../../assets/images/virteailogo.png')}/>
-                    <Menu source={require('../../../assets/images/menu.png')}/>
-                </Navegacao>
-
+                <Header/>
                 <HomeImage source={require('../../../assets/images/timefoto.png')}/>
 
                 <TituloSobrenos>Sobre nós</TituloSobrenos>
@@ -147,8 +140,6 @@ export default function SobreNos() {
                         </CardSac>
                     </ContainerContato>
 
-                        
-                
             </SobreNosContainer>
         </ScrollView>
     );

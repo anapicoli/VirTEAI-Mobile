@@ -1,7 +1,5 @@
 import styled from "styled-components/native";
 
-
-
 export const Navegacao = styled.View`
     background-color: #CADAED;
     width: 100%;

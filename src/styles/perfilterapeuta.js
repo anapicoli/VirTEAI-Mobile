@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const PerfilTerapeuta = styled.View`
     display: flex;
-    background-color:rgb(252, 252, 252);
+    background-color: white;
     align-items: center;
     flex: 1;
 `
@@ -21,7 +21,7 @@ export const Menu = styled.Image`
     margin-left: 83%;
     margin-top: -48px;
 `
-///////
+
 export const ContainerPerfil = styled.View`
     display: flex;
     flex-direction: row;
@@ -46,7 +46,7 @@ export const CRP = styled.Text`
 `
 export const StatusPerfil = styled.Text`
     font-size: 12px;
-    color: #ffffffff;
+    color: white;
     background-color: #22304A;
     font-family: "ComfortaaRegular";
     border-radius: 30px;
@@ -55,7 +55,6 @@ export const StatusPerfil = styled.Text`
    height: 40px;
     text-align: center;
 `
-//////////
 
 export const InfoCadastro = styled.View`
     display: flex;
@@ -67,7 +66,7 @@ export const InfoCadastro = styled.View`
 `
 export const TextoInfo = styled.Text`
     font-size: 18px;
-    color: #000000ff;
+    color: black;
     font-family: "MarmeladRegular";
     margin-right: 110px;
     margin-bottom: 20px;

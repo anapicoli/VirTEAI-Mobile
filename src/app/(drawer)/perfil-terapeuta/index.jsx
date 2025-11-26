@@ -1,31 +1,21 @@
 import React from "react";
 import {
-    Barra,
-  BoxPerfis,
   Card,
   ContainerPerfil,
-  ContainerPerfis,
   CRP,
-  EscolhaCad,
   Ficha,
   Icons,
   ImagemPerfil,
   Info,
   InfoCadastro,
-  Logo,
-  Menu,
-  Navegacao,
-  PerfilPaciente,
   PerfilTerapeuta,
-  PerfisContainer,
   StatusPerfil,
-  Subtextocad,
-  SubtextoPerfil,
   TextoInfo,
   TextoPerfil,
 } from "../../../styles/perfilterapeuta";
 import styled from "styled-components";
 import { BlurView } from 'expo-blur';
+import Header from "../../../components/header/Header";
 
 export default function Terapeuta() {
   const Content = styled(BlurView).attrs({
@@ -45,10 +35,7 @@ export default function Terapeuta() {
 
   return (
     <PerfilTerapeuta>
-      <Navegacao>
-        <Logo source={require("../../../assets/images/virteailogo.png")} />
-        <Menu source={require("../../../assets/images/voltarmobile.png")} />
-      </Navegacao>
+      <Header/>
 
       <ContainerPerfil>
         <ImagemPerfil source={require("../../../assets/images/perfilicon.png")} />

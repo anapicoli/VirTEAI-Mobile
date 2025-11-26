@@ -28,13 +28,7 @@ export const TextoRelatos = styled.Text`
     font-family: "ComfortaaRegular";
 
 `
-export const ContainerRelatos = styled.View`
-    margin-top: 120px;
-    display: flex;
-    flex-direction: row;
-    gap: 21px;
 
-`
 
 export const CardRelatoCliente = styled.View`
     background-color: #CADAED;

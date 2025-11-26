@@ -2,15 +2,10 @@ import styled from "styled-components/native";
 
 export const RedesMobile = styled.View`
     display: flex;
-    background-color:rgb(252, 252, 252);
+    background-color: white;
     align-items: center;
 `
-export const Navegacao = styled.View`
-    background-color: #CADAED;
-    width: 100%;
-    height: 90px;
-    display: flex;
-`
+
 export const Logo = styled.Image`
     margin: 9px;
 `
@@ -20,10 +15,10 @@ export const Menu = styled.Image`
     margin-left: 83%;
     margin-top: -48px;
 `
-///////
+
 export const TituloSocialMidia = styled.Text`
     font-size: 25px;
-    color: #000000ff;
+    color: black;
     text-align: center;
     margin-bottom: 5px;
     margin-top: 30px;
@@ -32,7 +27,7 @@ export const TituloSocialMidia = styled.Text`
 `
 export const SubSocialMidia = styled.Text`
     font-size: 15px;
-    color: #000000ff;
+    color: black;
     text-align: center;
     margin-bottom: 45px;
     margin-top: 5px;
@@ -57,7 +52,7 @@ export const LogoRedes = styled.Image`
 `
 export const TextoSocialMidia = styled.Text`
     font-size: 15px;
-    color: #ffffffff;
+    color: white;
     text-align: center;
     margin-top: 5px;
     font-family: "ComfortaaBold";
