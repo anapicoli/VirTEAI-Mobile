@@ -1,62 +1,81 @@
-import React, { useCallback, useState } from "react";
-import { Alert, Text } from "react-native";
+import React, {useEffect, useState} from "react";
+import {Alert, Text} from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import api from "../../../utils/api";
-import { ContainerLog, ContainerLogins,  Contalogin,  LoginContainer, TextoLogin } from "../../../styles/login";
+import {ContainerLog, ContainerLogins, Contalogin, LoginContainer, TextoLogin,} from "../../../styles/login";
 import Header from "../../../components/header/Header";
 import Input from "../../../components/input/Input";
 import Button from "../../../components/button/Button";
-import {router} from "expo-router";
-import { useFocusEffect } from "@react-navigation/native";
-
-
+import {useNavigation, useRouter} from "expo-router";
 
 export default function Login() {
+  const router = useRouter();
+  const navigation = useNavigation();
+
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [loading, setLoading] = useState(false);
   const [emailError, setEmailError] = useState("");
   const [senhaError, setSenhaError] = useState("");
 
-  useFocusEffect(
-    useCallback(() => {
+  useEffect(() => {
+    return navigation.addListener("focus", () => {
       setEmail("");
       setSenha("");
       setEmailError("");
       setSenhaError("");
       setLoading(false);
-      return () => {
-        setEmailError("");
-        setSenhaError("");
-      };
-    }, [])
-  );
+    });
+  }, [navigation]);
+
+  const validateEmailFormat = (e) => {
+    const trimmed = (e || "").trim();
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed);
+  };
 
   async function handleEntrar() {
     let hasError = false;
     setEmailError("");
     setSenhaError("");
-    if (!email) {
+
+    const trimmedEmail = email.trim();
+
+    if (!trimmedEmail) {
       setEmailError("Informe seu email");
       hasError = true;
+    } else if (!validateEmailFormat(trimmedEmail)) {
+      setEmailError("Email inválido");
+      hasError = true;
     }
+
     if (!senha) {
       setSenhaError("Informe sua senha");
       hasError = true;
     }
+
     if (hasError) return;
 
     try {
       setLoading(true);
-      const response = await api.post("login", { email, password: senha });
+      const response = await api.post("/login", { email: trimmedEmail, password: senha });
       const token = response?.data?.token;
+
       if (token) {
         await AsyncStorage.setItem("token", token);
+        Alert.alert("Sucesso", "Login realizado com sucesso!", [
+          {
+            text: "OK",
+            onPress: () => router.replace("/"),
+          },
+        ]);
+      } else {
+        Alert.alert("Erro", "Resposta inválida do servidor.");
       }
-      Alert.alert("Sucesso", "Login realizado com sucesso!");
-      try { router.replace("/"); } catch {}
     } catch (err) {
-      const msg = err?.response?.data?.message || "Não foi possível realizar o login.";
+      const serverMsg =
+        err?.response?.data?.message ||
+        (typeof err?.response?.data === "string" ? err.response.data : undefined);
+      const msg = serverMsg || err?.message || "Não foi possível realizar o login.";
       Alert.alert("Erro", msg);
     } finally {
       setLoading(false);
@@ -65,7 +84,7 @@ export default function Login() {
 
   return (
     <LoginContainer>
-      <Header/>
+      <Header />
       <ContainerLog>
         <TextoLogin>Login</TextoLogin>
       </ContainerLog>
@@ -87,11 +106,17 @@ export default function Login() {
           secureTextEntry
           error={senhaError}
         />
-        <Contalogin onPress={() => router.navigate('/perfis')} >
+        <Contalogin onPress={() => router.push("/cadastro-paciente")}>
           <Text>Não tenho cadastro</Text>
         </Contalogin>
-        <Button title="Entrar" onPress={handleEntrar} loading={loading} variant="submit" />
+        <Button
+          title="Entrar"
+          onPress={handleEntrar}
+          loading={loading}
+          disabled={loading}
+          variant="submit"
+        />
       </ContainerLogins>
     </LoginContainer>
-  )
+  );
 }

@@ -4,7 +4,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Avatar, Content, DrawerContainer, Footer, Header, UserName } from "./styles";
 
 export default function CustomDrawer(props) {
-  const { user } = props; // optional prop with user info
+  const { user } = props;
   const [isLogged, setIsLogged] = useState(false);
 
   async function refreshAuth() {
@@ -58,7 +58,6 @@ export default function CustomDrawer(props) {
     };
     const key = base.toLowerCase();
     if (map[key]) return map[key];
-    // Title Case padrão
     return base
       .split(" ")
       .filter(Boolean)

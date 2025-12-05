@@ -1,5 +1,4 @@
-// Global theme for styled-components/native
-// Note: Values mirror the existing styling in the project to avoid visual changes.
+
 const theme = {
   colors: {
     white: '#ffffff',

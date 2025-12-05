@@ -20,7 +20,6 @@ const Center = styled.View`
     align-items: center;
 `;
 
-// caminhos relativos ao arquivo src/app/_layout.jsx
 const fonts = {
     MarmeladRegular: require('../assets/fonts/Marmelad/Marmelad-Regular.ttf'),
     ComfortaaBold: require('../assets/fonts/Comfortaa/static/Comfortaa-Bold.ttf'),
@@ -49,7 +48,6 @@ export default function RootLayout() {
         };
     }, []);
 
-    // Carrega as fontes manualmente com Font.loadAsync
     useEffect(() => {
         let mounted = true;
 
@@ -65,7 +63,6 @@ export default function RootLayout() {
                 if (!mounted) return;
                 setFontsLoaded(true);
 
-                // esconder splash depois de carregar fontes
                 try {
                     await SplashScreen.hideAsync();
                 } catch (e) {
@@ -73,7 +70,6 @@ export default function RootLayout() {
                 }
             } catch (e) {
                 console.error('Font.loadAsync error:', e);
-                // fallback: tenta esconder a splash para não travar o app
                 try {
                     await SplashScreen.hideAsync();
                 } catch (e2) {
@@ -89,7 +85,6 @@ export default function RootLayout() {
         };
     }, []);
 
-    // Enquanto as fontes não carregaram, mostramos um indicador.
     if (!fontsLoaded) {
         return (
             <SafeAreaProvider>
@@ -100,7 +95,6 @@ export default function RootLayout() {
         );
     }
 
-    // Quando as fontes estiverem prontas, renderiza o app com Slot e tema.
     return (
         <GestureHandlerRootView style={{ flex: 1 }}>
             <SafeAreaProvider>

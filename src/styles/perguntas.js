@@ -20,7 +20,7 @@ export const SubPerguntas = styled.Text`
     text-align: center;
     margin-bottom: 45px;
     margin-top: 5px;
-    font-family: "ComfortaaRegular";
+    font-family: ConfortaaRegular;
     width: 290px;
 `
 export const CardAreia = styled.View`
