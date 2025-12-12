@@ -89,7 +89,7 @@ O projeto nasceu da necessidade de unir **inclusão, tecnologia e saúde mental*
 
 **Ester Brasil**: [https://github.com/esterrrrrrrrrr](https://github.com/esterrrrrrrrrr)
 
-**Lyvia Fernandes**: [https://github.com/LyviaFernandes](https://github.com/LyviaFernades)
+**Lyvia Fernandes**: [https://github.com/LyviaFernades](https://github.com/LyviaFernandes)
 
 **Valdir Pereira Nunes**: [https://github.com/valdirpereiranunes](https://github.com/valdirpereiranunes)
 
