@@ -86,7 +86,11 @@ O projeto nasceu da necessidade de unir **inclusão, tecnologia e saúde mental*
 
 ## 👥​ Time
 **Ana Picoli**: [https://github.com/anapicoli](https://github.com/anapicoli)
+
 **Ester Brasil**: [https://github.com/esterrrrrrrrrr](https://github.com/esterrrrrrrrrr)
+
 **Lyvia Fernandes**: [https://github.com/lyviafernandes](https://github.com/lyviafernades)
+
 **Valdir Pereira Nunes**: [https://github.com/valdirpereiranunes](https://github.com/valdirpereiranunes)
+
 **Yuri Onishi**: [https://github.com/YuriFernandesOnishi](https://github.com/YuriFernandesOnishi)
